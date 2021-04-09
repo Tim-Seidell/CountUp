@@ -41,8 +41,8 @@
                 var dd = String(today.getDate()).padStart(2, '0');
                 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
                 var yyyy = today.getFullYear();
-                var hr = String(today.getHours()); 
-                var mn = String(today.getMinutes());
+                var hr = String(today.getHours()).padStart(2, 0); 
+                var mn = String(today.getMinutes()).padStart(2, 0);
                 var sc = String(today.getSeconds()).padStart(2, 0);
 
                 rightNow = mm + dd + yyyy + hr + mn + sc;
