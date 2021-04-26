@@ -69,8 +69,11 @@
                 var seconds = Math.floor(delta % 60); 
                 
                 dayString = (days === 1 ? days + " day, " : days + " days, ");
+                hourString = (hours === 1 ? hours + " hour, " : hours + " hours, ");
+                minuteString = (minutes === 1 ? minutes + " minute, " : minutes + " minutes, ");
+                secondString = (seconds === 1 ? seconds + " second, " : seconds + " seconds, ");
     
-                return dayString + hours +  " hours, " + minutes +  " min, " + seconds + " seconds";
+                return dayString + hourString + minuteString + secondString;
             }
             
             function updateTime() {
