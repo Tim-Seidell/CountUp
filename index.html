@@ -67,8 +67,10 @@
                 delta -= minutes * 60;
     
                 var seconds = Math.floor(delta % 60); 
+                
+                dayString = (days === 0 ? days + " day, " : days + " days, ");
     
-                return days + " days, " + hours +  " hours, " + minutes +  " min, " + seconds + " seconds";
+                return dayString + hours +  " hours, " + minutes +  " min, " + seconds + " seconds";
             }
             
             function updateTime() {
